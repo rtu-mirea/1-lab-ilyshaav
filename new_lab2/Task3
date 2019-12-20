@@ -14,7 +14,7 @@ public class Task3 {
                 return 0 //  если не совпадает System.out.println(i + " не16сс");
         }
     }
-    public Ыекштп delete(String x){
+    public String delete(String x){
         String y[] = x.split(" ");
         x+= " ";
         int len = y.length;
