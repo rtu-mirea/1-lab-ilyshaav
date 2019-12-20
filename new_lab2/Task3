@@ -2,19 +2,19 @@ package com.company;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class Task3 {
-    public void check(String x){
+    public int check(String x){
         String y[]= x.split(" ");
         Pattern p = Pattern.compile("^([0-9]|[a-fA-F])+");
         Matcher m;
         for (String i : y) {
             m = p.matcher(i);
             if(m.matches())
-                System.out.println(i + " 16cc");
+                return 1 // если совпадает  System.out.println(i + " 16cc");
             else
-                System.out.println(i + " не16сс");
+                return 0 //  если не совпадает System.out.println(i + " не16сс");
         }
     }
-    public void delete(String x){
+    public Ыекштп delete(String x){
         String y[] = x.split(" ");
         x+= " ";
         int len = y.length;
@@ -24,6 +24,6 @@ public class Task3 {
             x = x.replaceAll("(?:" + Pattern.quote(y[i] + " ") + "){2,}","");
         }
         x.trim();
-        System.out.println(x);
+        return(x);
     }
 }
