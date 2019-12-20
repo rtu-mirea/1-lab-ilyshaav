@@ -83,10 +83,13 @@ public class Main {
                         n = in.nextInt();
                         switch (n) {
                             case 1:
-                                t.check(task3);
+                                if (t.check(task3)==1);
+                                    System.out.println(task3 + "число в 16-ичной сс");
+                                else;
+                                    System.out.println(task3 + "число не в 16-ичной сс");
                                 break;
                             case 2:
-                                t.delete(task3);
+                                System.out.println(t.delete(task3))
                                 break;
                             case 3:
                                 ko = false;
